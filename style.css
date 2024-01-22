@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+:root {
+    --primary-color: #4f4aa6;
+    --secondary-color: #48ca95;
+    --bg-color: #f7f7f7;
+    --light-color: #ffffff;
+    --dark-color: #000;
+    --font: 'Poppins', sans-serif;
+    --max-width: 1200px;
+    --header-height: 4rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /*color: var(--light-color);*/
+    background-image: url('images/banner.jpg');
+}
+
+.card-dev {
+    background-color: #fff !important;
+    border: 1px solid #48ca95 !important;
+}
+
+.contact-form {
+    background-image: url('images/cross.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-content {
+    border: 2px solid var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    width: 90%;
+    background: transparent;
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+    padding: 1rem;
+    outline: none;
+}
+
+textarea {
+
+    resize: none !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    color: rgb(255 255 255) !important;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-send {
+    background-color: var(--secondary-color) !important;
+    padding: 1rem 3rem !important;
+    border-radius: 35px !important;
+    color: var(--light-color) !important;
+    font-size: 1.5rem !important;
+    transition: .5s ease all !important;
+}
+
+.btn-send:hover {
+    background-color: var(--dark-color) !important;
+    padding: 1rem 3rem !important;
+    border-radius: 35px !important;
+    color: var(--light-color) !important;
+    font-size: 1.5rem !important;
+}
+
+.contact-form {
+    background-image: url('images/contact_g.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+footer {
+    background-image: url('images/footer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.enter {
+    border: none;
+    background: var(--light-color);
+    border-radius: 15px;
+    font-weight: 600;
+    color: var(--dark-color) !important;
+}
+
+.sub-btn {
+    border: none !important;
+    background: var(--secondary-color) !important;
+    border-radius: 15px !important;
+    padding: 1rem !important;
+    margin-block: 1rem !important;
+    color: var(--light-color) !important;
+    font-weight: 600 !important;
+}
+
+.icon-i {
+    color: var(--light-color);
+    
+}
+
+.text-body-secondary {
+    color: rgb(255, 255, 255)!important;
+}
+
+.btn-more {
+    border: 1px solid var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
+    border-radius: 0 !important;
+    transition: .5s ease all !important;
+}
+
+.btn-more:hover {
+    background-color: var(--dark-color) !important;
+    color: var(--light-color) !important;
+    border: 1px solid var(--dark-color) !important;
+}
+
+.btn-nav:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-now, .btn-contant {
+    border: 2px solid var(--light-color) !important;
+    background-color: transparent !important;
+    color: var(--light-color) !important;
+    border-radius: 0 !important;
+    transition: .5s ease all !important;
+}
+
+.btn-contant:hover {
+    background-color: var(--secondary-color) !important;
+}
+.btn-now:hover {
+    background-color: var(--secondary-color) !important;
+
+}
+
+.btn-shop {
+    border-radius: 0 !important;
+    background-color: var(--secondary-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: .5s ease all !important;
+}
+
+.btn-shop:hover {
+    background-color: var(--dark-color) !important;
+    border: none !important;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: 1;
+}
