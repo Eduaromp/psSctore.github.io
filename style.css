@@ -64,6 +64,19 @@ textarea {
     outline: none;
 }
 
+.box-img {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 textarea {
 
     resize: none !important;
